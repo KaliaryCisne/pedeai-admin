@@ -30,7 +30,22 @@ const menu = [
   },
   {
     "group": "Restaurante",
-    "items": [],
+    "items": [
+      {
+        "name": "Pedidos",
+        "icon": "fastfood",
+        "subitems": [
+          {
+            "text": "Listar",
+            "path": "pedidos.html"
+          },
+          {
+            "text": "Adicionar",
+            "path": "novo-pedido.html"
+          },
+        ]
+      }
+    ],
   },
   {
     "group": "Cardápio",
@@ -41,11 +56,25 @@ const menu = [
         "subitems": [
           {
             "text": "Listar",
-            "path": "#",
+            "path": "categories",
           },
           {
             "text": "Adicionar",
-            "path": "#",
+            "path": "newCategory",
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "icon": "menu_book",
+        "subitems": [
+          {
+            "text": "Listar",
+            "path": "item",
+          },
+          {
+            "text": "Adicionar",
+            "path": "newItem",
           }
         ]
       },

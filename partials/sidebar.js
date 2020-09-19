@@ -1,6 +1,13 @@
+const renderContent = (functionName) => {
+  let content = window[functionName]();
+
+  document.getElementById('page-content').innerHTML = content;
+}
+
+
 const mountSubitems = (subitems) => {
   return subitems.map(subitem => `
-    <a class="collapse-item" href="${subitem.path}">
+    <a class="collapse-item" href='#' onclick="renderContent('${subitem.path}')">
       ${subitem.text}
     </a>
   `);
